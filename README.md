@@ -17,7 +17,6 @@ lua src/main.lua custom.json output.lua
 ```
 /root-directory
   ├── /src
-  │   ├── main.lua             # Main script for executing the conversion
   │   ├── config.lua           # Configuration file for paths and settings
   │   ├── /modules             # Modules for specific functionalities
   │   │   ├── JsonFieldExtractor.lua   # Module for extarcting JSON file
@@ -35,3 +34,10 @@ lua src/main.lua custom.json output.lua
 
 ```
 This project have been tested with lua 5.4, for both windows10&11 and also ubuntu LTS.
+
+
+CHANGELOG:
+- Move the `main.lua` file to root directory.
+- Make sure that the file `JsonFieldExtactor.lua ` require the `Utils` module. (case-sensitive)
+
+changes are up to date for 09/12
