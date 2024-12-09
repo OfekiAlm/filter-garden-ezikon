@@ -6,7 +6,7 @@
 
 -- Extend the package path to include the module directory
 package.path = package.path .. ";./src/modules/?.lua;./src/utils/?.lua"
-local utils = require("utils")
+local utils = require("Utils")
 
 local extract_json_field, extract_json_struct
 
