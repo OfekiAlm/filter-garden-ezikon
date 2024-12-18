@@ -20,7 +20,7 @@ end
 function ArgumentParser.parse_arguments(...)
     local args = {...}
     if #args >= 2 then
-        if arg[1] == "--help" or arg[2] == "--help" then
+        if args[1] == "--help" or args[2] == "--help" then
             print_help()
             os.exit(0)
         end
